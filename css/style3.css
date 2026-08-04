@@ -1,0 +1,33 @@
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #ff8989;
+}
+
+#main {
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    height: 400px;
+    background-color: #ffc6c6;
+}
+
+#sidebar2 {
+    width: 200px;
+    height: 400px;
+    background-color: #ffc6c6;
+}
+
+#content {
+    width: calc(100% - 400px);
+    height: 400px;
+    background-color: #926464;
+}
+
+#footer {
+    width: 100%;
+    height: 150px;
+    background-color: #812626;
+}
