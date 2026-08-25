@@ -44,9 +44,29 @@ body > header .wrapper {
 } 
 
 nav {
-    width: 400px;
-    height: 80px;
-    background-color: #f5deb3;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #89ffac;
+    
+
 }
 
 main{
