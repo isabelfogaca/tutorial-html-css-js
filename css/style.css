@@ -68,7 +68,6 @@ nav ul li a{
 
 nav ul li a:hover {
     color: #89ffac;
-
 }
 
 nav ul li a.active{
@@ -121,13 +120,38 @@ form {
     gap: 10px;
 }
 
+fieldset {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #fff;
+    margin: 10px 0 0 0;
+}
 
-form label {
+label {
     margin: 20px 0 0 0;
 }
 
-form input {
+input, select, textarea {
     padding: 5px 8px;
     border-radius: 15px;
     border: none;
+    margin: 5px 0 0 0;
+}
+
+input[type="submit"] {
+    background-color: #89ffac;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+
+}
+
+input[type="submit"]:hover {
+    background-color: #007022;
+    color: #fff;
+    transform: scale(1.1);
+
 }

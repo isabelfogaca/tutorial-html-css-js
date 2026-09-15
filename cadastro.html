@@ -25,16 +25,31 @@
         </header>
         <main>
             <div class="wrapper">
-                <h1>Cadastro</h1>
                 <form>
-                    <label for="nameUser">Nome:</label>
-                    <input type="text" name="nameUser" id="nameUser" placeholder="Nome">
+                    <h1>Cadastro</h1>
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <label for="nameUser">Nome:</label>
+                            <input type="text" name="nameUser" id="nameUser" placeholder="Nome">
 
-                    <label for="surnameUser">Sobrenome:</label>
-                    <input type="text" name="surnameUser" id="surnameUser" placeholder="Sobrenome">
-                    
-                    <label for="passwordUser">Senha:</label>
-                    <input type="password" name="passwordUser" id="passwordUser">
+                            <label for="surnameUser">Sobrenome:</label>
+                            <input type="text" name="surnameUser" id="surnameUser" placeholder="Sobrenome">
+                            
+                            <label for="telUser">Telefone:</label>
+                            <input type="tel" name="telephone" id="telUser" placeholder="Telefone">
+
+                            <label for="cpfUser">CPF:</label>
+                            <input type="number" name="cpfUser" id="cpfUser" placeholder="CPF">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Dados de Acesso</legend>
+                            <label for="emailUser">E-mail:</label>
+                            <input type="email" name="emailUser" id="emailUser" placeholder="E-mail">
+
+                            <label for="passwordUser">Senha:</label>
+                            <input type="password" name="passwordUser" id="passwordUser">
+                        </fieldset>
 
                     <p>Qual seu perfil de investidor?</p>
 
@@ -54,25 +69,83 @@
                     <p>Em quais tipos de investimentos você está interessado?</p>
 
                     <div>
-                        <input type="checkbox" name="investimentos[]" id="rendaFixa" value="rendaFixa">
+                        <input type="checkbox" name="investimentos[]" id="rendaFixa" value="fi">
                         <label for="rendaFixa">Renda Fixa</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="investimentos[]" id="rendaVariavel" value="rendaVariavel">
+                        <input type="checkbox" name="investimentos[]" id="rendaVariavel" value="fi">
                         <label for="rendaVariavel">Renda Variável</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="investimentos[]" id="fundosImobiliarios" value="fundosImobiliarios">
+                        <input type="checkbox" name="investimentos[]" id="fundosImobiliarios" value="fi">
                         <label for="fundosImobiliarios">Fundos Imobiliários</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="investimentos[]" id="criptoativos" value="criptoativos">
+                        <input type="checkbox" name="investimentos[]" id="criptoativos" value="fi">
                         <label for="criptoativos">Criptoativos</label>
                     </div>
 
+                    <p>Qual seu nível de conhecimento em investimentos?</p>
 
+                    <div>
+                        <input type="radio" name="nivelConhecimento" id="iniciante" value="iniciante">
+                        <label for="iniciante">Iniciante</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="nivelConhecimento" id="intermediario" value="intermediario">
+                        <label for="intermediario">Intermediário</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="nivelConhecimento" id="avancado" value="avancado">
+                        <label for="avancado">Avançado</label>
+                    </div>
 
+                    <fieldset>
+                        <legend>Endereço</legend>
 
+                        <label for="stateUser">Estado:</label>
+                        <select name="stateUser" id="stateUser">
+                            <option value="es">Espírito Santo</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                        </select>
+
+                        <label for="cityUser">Cidade:</label>
+                        <select name="cityUser" id="cityUser">
+                            <option value="es">Vitória</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Belo Horizonte</option>
+                        </select>
+
+                        <label for="cepUser">CEP:</label>
+                        <input type="text" name="cepUser" id="cepUser" placeholder="CEP"> 
+
+                        <label for="neighborhoodUser">Bairro:</label>
+                        <input type="text" name="neighborhoodUser" id="neighborhoodUser"   placeholder="Bairro">
+                        
+                        <label for="streetUser">Rua:</label>
+                        <input type="text" name="streetUser" id="streetUser" placeholder="Rua">
+
+                        <label for="numberStreetUser">Número:</label>
+                        <input type="number" name="numberStreetUser" id="numberStreetUser" placeholder="Número">
+
+                    </fieldset>
+
+                    <label for="investmentGoalUser">Objetivos de Investimento:</label>
+                    <textarea name="investmentGoalUser" id="investmentGoalUser" placeholder="Descreva seus objetivos de investimento..."></textarea>
+                    
+                    <div>
+                        <input type="checkbox" name="termosUso[]" id="termosUso" value="termos">
+                        <label for="termosUso">Aceita os termos de uso?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="promocoes[]" id="promocoes" value="promocoes">
+                        <label for="promocoes">Deseja receber promoções?</label>
+                    </div>
+                    
+                    <input type="submit" value="Cadastrar">
                 </form>
             </div>
             
